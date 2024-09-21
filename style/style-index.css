@@ -1,0 +1,112 @@
+/* navbar */
+body{
+    margin:0;
+    
+}
+.header-sec{
+    background-color: #333;
+    padding:20px;
+    overflow: hidden;
+    display: flex;
+    
+}
+
+.header-sec a{
+
+    color:wheat;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size:20px;
+}
+.header-sec a#login#signin{
+    float: right;
+    color:wheat;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size:20px;
+}
+.header-sec a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.header-sec a#active{
+    background-color: #04AA6D;
+
+}
+
+/* main section */
+.main{
+    background-color: azure;
+    padding:20px;
+    overflow: hidden;
+}
+.main #title-article{
+    text-align: center;
+    font-size: 30px;
+}
+
+.main h5{
+    text-align: center;
+    font-style: italic;
+    font-size:12px;
+}
+
+.main #image1 {
+    display: block;
+    margin: 0 auto; /* Membuat gambar di tengah */
+    padding: 20px;
+    max-width: 100%; /* Membuat gambar responsif */
+}
+@media (max-width: 768px) {
+    .header-sec {
+        flex-direction: column; /* Ubah arah elemen menjadi kolom pada layar kecil */
+        text-align: center;
+    }
+    
+    .main #title-article {
+        font-size: 24px;
+    }
+
+    .main h5 {
+        font-size: 12px;
+    }
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.footer li {
+    margin: 0 15px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.footer a:hover {
+    border-bottom: 2px solid white;
+}
+
+/* Icon styling */
+.footer span {
+    font-size: 24px;
+}
